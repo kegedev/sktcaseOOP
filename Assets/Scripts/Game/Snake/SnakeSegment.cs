@@ -6,6 +6,7 @@ public class SnakeSegment : MonoBehaviour
     public PoolType PoolType;
     [SerializeField] private HealthComponent _healthComponent;
 
+    [SerializeField] GameObject KillParticle;
 
     private void Start()
     {
@@ -25,8 +26,11 @@ public class SnakeSegment : MonoBehaviour
 
     internal void Kill()
     {
+        Instantiate(KillParticle, transform.position, Quaternion.identity, null);
         ActionManager.SegmentKilled?.Invoke(this);
     }
+
+
 }
 
 public static partial class ActionManager

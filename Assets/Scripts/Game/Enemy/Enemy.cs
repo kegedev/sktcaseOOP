@@ -6,6 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(EnemyTargeting))]
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] GameObject KillParticle;
     private const int Damage = 10;
 
     public int GetDamage() => Damage;
@@ -25,6 +26,7 @@ public class Enemy : MonoBehaviour
 
     internal void Kill()
     {
+        Instantiate(KillParticle,transform.position,Quaternion.identity,null);
         ActionManager.EnemyKilled?.Invoke(this);
     }
 }

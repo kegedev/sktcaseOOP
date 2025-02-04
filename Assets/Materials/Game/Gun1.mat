@@ -16,6 +16,7 @@ Material:
   - TCP2_RIM_LIGHTING_LIGHTMASK
   - TCP2_SHADOW_LIGHT_COLOR
   - TCP2_UV_NORMALS_FULL
+  - _EMISSION
   m_InvalidKeywords:
   - OUTLINES
   - TCP2_DISABLE_WRAPPED_LIGHT
@@ -50,7 +51,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 11b7e4494ea0ed548bd9656d781bee35, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -101,7 +102,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DirectIntensityOutline: 1
     - _DstBlend: 0
-    - _EmissionChannel: 4
+    - _EmissionChannel: 3
     - _FresnelMax: 1.5
     - _FresnelMin: 0
     - _GlossMapScale: 1
@@ -135,8 +136,8 @@ Material:
     - _RampScale: 1
     - _RampSmooth: 0.2
     - _RampSmoothAdd: 0.75
-    - _RampSmoothing: 0.1
-    - _RampThreshold: 0.5
+    - _RampSmoothing: 0.502
+    - _RampThreshold: 0.01
     - _RampType: 0
     - _ReceiveShadowsOff: 1
     - _ReflectionMapType: 0
@@ -167,7 +168,7 @@ Material:
     - _TexLod: 5
     - _UVSec: 0
     - _UseAlphaTest: 0
-    - _UseEmission: 0
+    - _UseEmission: 1
     - _UseFresnelReflections: 1
     - _UseMatCap: 0
     - _UseMatCapMask: 0
@@ -183,12 +184,12 @@ Material:
     - _ZSmooth: -0.5
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
+    - _BaseColor: {r: 1, g: 0.99433213, b: 0.7905661, a: 1}
     - _Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 1, g: 0.7049509, b: 0, a: 1}
     - _HColor: {r: 1, g: 1, b: 1, a: 1}
     - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectionColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.6}
     - _SColor: {r: 0.24999997, g: 0.24999997, b: 0.24999997, a: 1}

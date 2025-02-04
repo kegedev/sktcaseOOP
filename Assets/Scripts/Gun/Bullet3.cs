@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Bullet3 : Bullet
@@ -5,7 +6,8 @@ public class Bullet3 : Bullet
     private Vector3 _circleCenter;
     private float _circleRadius = 1f;
     private float _angle = 0f;
-
+    [SerializeField] bool circle;
+    [SerializeField] float enemydist;
     public override void MoveToTarget()
     {
         if (Target == null)
@@ -21,8 +23,10 @@ public class Bullet3 : Bullet
         transform.LookAt(Target.position);
         transform.position += transform.forward * Speed * Time.deltaTime;
 
-        if (Target != null && Vector3.Distance(transform.position, Target.position) < 0.6f)
+        enemydist = Vector3.Distance(transform.position, Target.position);
+        if (Vector3.Distance(transform.position, Target.position) < 1f)
         {
+            
             Target.GetComponent<Enemy>().TakeDamage(Damage);
             Destroy(gameObject);
         }
@@ -45,6 +49,7 @@ public class Bullet3 : Bullet
 
     private void MoveInCircle()
     {
+        circle = true;
         _angle += Speed * Time.deltaTime / 2;
         if (_angle >= 360f) _angle -= 360f;
 

@@ -24,6 +24,7 @@ public abstract class HealthComponent : MonoBehaviour
         
         if (_currentHealth <= 0)
         {
+            Debug.Log(this);
             HandleDeath();
         }
     }

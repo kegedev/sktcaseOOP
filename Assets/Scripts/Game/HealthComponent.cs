@@ -19,12 +19,10 @@ public abstract class HealthComponent : MonoBehaviour
     {
         _currentHealth -= damage;
         _currentHealth = Mathf.Max(_currentHealth, 0);
-        Debug.Log((_currentHealth / _maxHealth) / 5);
         _healthFill.localScale = new Vector3(((float)_currentHealth/ (float)_maxHealth)/5, _healthFill.localScale.y, _healthFill.localScale.z);
         
         if (_currentHealth <= 0)
         {
-            Debug.Log(this);
             HandleDeath();
         }
     }

@@ -39,7 +39,6 @@ public class EnemyWaveController : MonoBehaviour
         while (true)
         {
             currentWave++;
-            Debug.Log($"Starting Wave {currentWave}");
 
             int enemyCount = initialEnemyCount + (currentWave - 1) * enemiesPerWaveIncrement;
 

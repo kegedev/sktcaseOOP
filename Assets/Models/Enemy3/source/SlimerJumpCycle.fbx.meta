@@ -3,7 +3,32 @@ guid: a73a9aa3e3642154a9a90a3e619bb909
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 6c9088ad12e253e4b8d0e65bb2ce061b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default
+    second: {fileID: 2100000, guid: dcd5a70be3cec7f4fa25d19710338d09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Default
+    second: {fileID: 2100000, guid: 35aa2f8088d6df0428c3faa2b63f564a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_slime
+    second: {fileID: 2100000, guid: a5ef235332a87dc4da9900a1b7796b8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissive
+    second: {fileID: 2100000, guid: f56884beb86901542b19a4b8fc7b3d8e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

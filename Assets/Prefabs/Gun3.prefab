@@ -230,10 +230,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 2950687272452081613, guid: 9589bd067df522b4d880de2eba46a900, type: 3}
   TargetEnemy: {fileID: 0}
-  FireRate: 2
   BulletType: 2
   Model: {fileID: 6296245094125441014}
   GunTip: {fileID: 4381058586116377738}
+  FireRate: 2
 --- !u!1001 &9223249305361778240
 PrefabInstance:
   m_ObjectHideFlags: 0

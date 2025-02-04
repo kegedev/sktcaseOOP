@@ -198,10 +198,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 2950687272452081613, guid: d8b81a5cff35757408dc847c0549efb2, type: 3}
   TargetEnemy: {fileID: 0}
-  FireRate: 0.2
   BulletType: 0
   Model: {fileID: 6296245094125441014}
   GunTip: {fileID: 8494291664232724193}
+  FireRate: 0.2
 --- !u!1001 &7578483117237632636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -214,6 +214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turret
       objectReference: {fileID: 0}
+    - target: {fileID: 2673556454721979180, guid: 72006e9944df23a438ff92d5aeec4a23, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 353a5fc4ea0beca48ab4cb0aa057dabc, type: 2}
     - target: {fileID: 8529792555728396432, guid: 72006e9944df23a438ff92d5aeec4a23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
